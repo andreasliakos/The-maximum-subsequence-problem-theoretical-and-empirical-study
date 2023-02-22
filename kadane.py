@@ -60,7 +60,7 @@ def MaxSubFaster(a_list):
 
     return largest_sum, start, end
 
-def kadane(a_list):
+def kadane_alg(a_list):
     largest_sum = a_list[0]
     sum = 0  # Αρχικοποίηση της μεταβλητής που θα αποθηκέυει το εκάστοτε άθροισμα
     start = 0  # Αρχικοποίηση της μεταβλητής που θα αποθηκεύει την θέση που ξεκινάει το μέγιστο άθροισμα
@@ -86,7 +86,7 @@ def ArrayGen(num, ran):
 
 def main():
     # Αρχικοποίηση του πίνακα των συναρτήσεων
-    functions = [maxsubslow, MaxSubFaster, kadane]
+    functions = [maxsubslow, MaxSubFaster, kadane_alg]
     # Αρχικοποίηση του πίνακα των τιμών που καθορίζουν το μέγεθος του τυχαίου πίνακα
     num = [10, 100, 1000]  
     ran = 100  # Εύρος του πίνακα
